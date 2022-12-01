@@ -1,0 +1,14 @@
+/*#region main*/
+@media (width > 780px) {
+  .navbar {
+    display: none;
+  }
+}
+@media (width <= 780px) {
+  .header {
+    display: none;
+  }
+  .header__burger {
+    display: none;
+  }
+}
