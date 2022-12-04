@@ -1,3 +1,4 @@
+/* 768 */
 @media (width > 780px) {
   .navbar {
     display: none;
@@ -14,10 +15,21 @@
   .header__burger {
     display: none;
   }
+  .activities__item {
+    width: 50%;
+  }
 }
+
+/* 1024 */
 @media (width <= 1024px) {
   .about__title {
     left: 10px;
     top: 100px;
+  }
+}
+@media (width <= 425px) {
+  .activities__item {
+    width: 100%;
+    height: 200px;
   }
 }

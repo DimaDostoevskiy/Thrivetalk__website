@@ -355,26 +355,30 @@ body {
   line-height: 160%;
   letter-spacing: 0.05rem;
 
-  color: #c9d5f8;
+  color: #3554b0;
 }
 /*#endregion*/
 
 /*#region activities */
 
 .activities {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  position: relative;
 
-  min-width: 1024px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  flex-wrap: wrap;
 
   height: fit-content;
-  position: relative;
+
+  background-color: #ffffff;
 }
 .activities__item {
-  width: 100%;
-  min-width: 320px;
-  height: 360px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 25%;
+  height: 320px;
 }
 .activities__text {
   display: block;
@@ -390,7 +394,7 @@ body {
   color: #ffffff;
 }
 .line {
-  margin: 100px auto 40px auto;
+  margin: 0 auto 30px;
 
   width: 80%;
   height: 2px;
