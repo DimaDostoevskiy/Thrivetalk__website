@@ -1,14 +1,23 @@
-/*#region main*/
 @media (width > 780px) {
   .navbar {
     display: none;
   }
 }
 @media (width <= 780px) {
+  .img-person_2 {
+    left: 0;
+    width: 100%;
+  }
   .header {
     display: none;
   }
   .header__burger {
     display: none;
+  }
+}
+@media (width <= 1024px) {
+  .about__title {
+    left: 10px;
+    top: 100px;
   }
 }

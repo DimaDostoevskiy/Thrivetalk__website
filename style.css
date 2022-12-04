@@ -7,6 +7,9 @@
   font-family: "Roboto", sans-serif;
   text-decoration: none;
 }
+body {
+  background-color: #f4f9e2;
+}
 .container {
   position: relative;
   margin: 0 auto;
@@ -73,8 +76,8 @@
   background-size: cover;
 }
 
-.bg-image-girl {
-  background-image: url(./img/gerl.jpg);
+.img-person_2 {
+  background-image: url(./img/person_2.jpg);
 
   position: absolute;
 
@@ -83,7 +86,7 @@
   width: 600px;
   height: 100%;
 
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
   background-color: #cccccc;
   background-size: cover;
@@ -142,7 +145,7 @@
 
 .main {
   position: relative;
-  height: 840px;
+  height: fit-content;
   background-color: #f4f9e2;
 }
 
@@ -166,6 +169,7 @@
 
   color: #62d0df;
 }
+
 .header__menu {
   display: flex;
   list-style: none;
@@ -197,7 +201,12 @@
 
 /*#region headline*/
 
+.headline {
+  position: relative;
+}
 .headline__anchor {
+  position: relative;
+
   display: block;
 
   margin-bottom: 50px;
@@ -232,18 +241,23 @@
 }
 .headline__buttons {
   display: flex;
-  justify-content: flex-start;
+  justify-content: start;
   align-items: center;
+
+  margin-bottom: 100px;
 
   height: 50px;
 }
 .headline__action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 
-  margin-right: 30px;
-  padding: 15px 30px;
-
   width: 150px;
+  height: 50px;
+  min-width: 32px;
+  max-width: 300px;
 
   font-size: 16px;
   font-weight: 700;
@@ -255,27 +269,21 @@
 .headline__action:hover {
   color: #ffffff;
   background-color: #f9b640;
-  border: none;
 }
 /*#endregion headline*/
-
-/*#endregion main*/
 
 /*#region advantages */
 
 .advantages {
   position: relative;
-  height: 600px;
+  height: fit-content;
 
   color: #ffffff;
   background-color: #62d0df;
 }
-.advantages-content {
-  width: 555px;
-  position: relative;
-  padding-top: 100px;
-}
 .advantages__title {
+  padding-top: 100px;
+  padding-bottom: 100px;
   font-size: 26px;
   font-weight: 700;
   line-height: 165%;
@@ -286,7 +294,12 @@
   line-height: 170%;
 }
 .advantages__description {
-  padding-top: 60px;
+  display: block;
+
+  padding-bottom: 100px;
+
+  max-width: 500px;
+  min-width: 300px;
 
   font-size: 20px;
   font-weight: 500;
@@ -298,52 +311,51 @@
 
 .about {
   position: relative;
-  height: 500px;
+  height: fit-content;
   background-color: #ffffff;
 }
-
 .about__title {
   position: absolute;
+
+  top: 160px;
+  left: 108px;
 
   font-size: 16px;
   font-weight: 400;
   line-height: 120%;
   letter-spacing: 6%;
 
-  top: 108px;
-  left: 108px;
-
   color: #22356f;
 }
 .about__descriptions {
   display: block;
 
-  width: 600px;
-  height: 210px;
+  max-width: 600px;
+  min-width: 300px;
 
-  padding-top: 100px;
-
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  padding: 150px 10px 70px 10px;
 
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 160%;
-  letter-spacing: 0.5%;
+  letter-spacing: 0.02rem;
 
   color: #22356f;
 }
 .about__link {
   display: block;
+  text-align: center;
 
-  width: 200px;
+  margin: 0 auto;
+  padding: 25px 0 25px 0;
 
-  padding-top: 140px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: 0.05rem;
 
-  margin-left: auto;
-  margin-right: auto;
-
-  color: #22356f;
+  color: #c9d5f8;
 }
 /*#endregion*/
 
@@ -351,15 +363,21 @@
 
 .activities {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+
+  min-width: 1024px;
+
+  height: fit-content;
+  position: relative;
 }
 .activities__item {
-  position: relative;
-
   width: 100%;
+  min-width: 320px;
   height: 360px;
 }
 .activities__text {
+  display: block;
   margin: 0 auto;
   width: 80%;
 
@@ -639,6 +657,8 @@
 }
 /* #endregion  */
 
+/* #region navbar */
+
 .navbar {
   position: relative;
 
@@ -661,7 +681,7 @@
 
   font-size: 48px;
 
-  color: #62d0df;
+  color: #fab63e;
 
   transition: 1s;
 }
@@ -687,33 +707,31 @@
 }
 
 .navbar__menu_active {
-  /* border-color: #62d0df;
-  border-style:groove;
-  border-radius: 10px; */
-  
   margin-top: 600px;
-  
+
   transition: 1s;
 }
 
 .navbar__link {
   display: block;
-  background-color:#f4f9e2;
+  background-color: #f4f9e2;
   opacity: 0.8;
 
   padding-top: 30px;
   padding-bottom: 30px;
 
-  margin: 30px auto;
+  border-bottom: #a4a8ae;
+  border-style: outset;
+  border: 4px outset darkgray;
 
-  width: 70%;
+  margin: 8px auto;
+
+  width: 90%;
 
   text-align: center;
   align-items: center;
 
   color: #fab63e;
-
-  /* background-color: rgba(42, 42, 42, 0.5); */
 }
 
 .navbar__button {
@@ -724,7 +742,7 @@
 
   border: 2px solid;
   border-radius: 2px;
-  border-color: #62d0df;
+  border-color: #fab63e;
 
   transition: 1s;
 
@@ -743,5 +761,6 @@
   width: 80%;
   height: 0.5px;
 
-  background-color: #62d0df;
+  background-color: #fab63e;
 }
+/* #endregion */

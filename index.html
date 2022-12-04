@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Thrivetalk</title>
   <link rel="stylesheet" href="./style.css" />
-  <link rel="stylesheet" href="./media.css" />
+  <link rel="stylesheet" href="./style_media.css" />
 </head>
 
 <body>
@@ -15,7 +15,7 @@
   <main class="main">
     <div class="bg-main-img"></div>
     <div class="container">
-      <!-- header -->
+      <!-- header > 788px -->
       <header class="header">
         <a class="header__logo" href="/">Thrivetalk</a>
         <div class="header__burger"></div>
@@ -27,21 +27,22 @@
         </ul>
         <button class="btn-contact" type="button">CONTACT US</button>
       </header>
-        <navbar class="navbar">
-          <div class="navbar__button" id="navbar__button">
-            <div class="navbar__button-line"></div>
-            <div class="navbar__button-line"></div>
-            <div class="navbar__button-line"></div>
-          </div>
-          <a class="navbar__logo" id="navbar__logo" href="/">Thrivetalk</a>
-          <ul class="navbar__menu" id="navbar__menu">
-            <li class="navbar__link">link 1</li>
-            <li class="navbar__link">link 2</li>
-            <li class="navbar__link">link 3</li>
-            <li class="navbar__link">link 4</li>
-            <li class="navbar__link navbar__close-menu-button">X</li>
-          </ul>
-        </navbar>
+      <!-- navbar < 788px -->
+      <navbar class="navbar">
+        <div class="navbar__button" id="navbar__button">
+          <div class="navbar__button-line"></div>
+          <div class="navbar__button-line"></div>
+          <div class="navbar__button-line"></div>
+        </div>
+        <a class="navbar__logo" id="navbar__logo" href="/">Thrivetalk</a>
+        <ul class="navbar__menu" id="navbar__menu">
+          <li class="navbar__link"><a href="/">link 1</a></li>
+          <li class="navbar__link"><a href="/">link 2</a></li>
+          <li class="navbar__link"><a href="/">link 3</a></li>
+          <li class="navbar__link"><a href="/">link 4</a></li>
+          <li class="navbar__link navbar__close-menu-button">X</li>
+        </ul>
+      </navbar>
       <!-- headline -->
       <div class="headline">
         <h4 class="headline__anchor"># Thrivetalk</h4>
@@ -55,34 +56,32 @@
           even just caring for yourself more.
         </h4>
         <div class="headline__buttons">
-          <a class="headline__action headline__action_active" href="/">
+          <a class="headline__action " href="/">
             WHO AM I
           </a>
-          <a class="headline__action" href="/">WHAT DO I DO</a>
+          <a class="headline__action headline__action_active" href="/">WHAT DO I DO</a>
         </div>
       </div>
     </div>
   </main>
   <!-- advantages -->
-  <section class="advantages hidden">
-    <div class="bg-image-girl"></div>
+  <section class="advantages">
+    <div class="img-person_2"></div>
     <div class="container">
-      <div class="advantages-content">
-        <h2 class="advantages__title">Why Thrive?</h2>
-        <div class="advantages__description">
-          <span class="advantages__accent">Want to improve your well-being from the comfort of your own
-            couch? Are you having trouble finding the right therapist?
-          </span>
-          Here at ThriveTalk, our licensed therapists provide the same quality
-          care you would get in office from anywhere you can access your
-          laptop or mobile phone. Become your best self with ThriveTalk. Start
-          therapy now with a licensed therapist!
-        </div>
-      </div>
+      <h2 class="advantages__title">Why Thrive?</h2>
+      <h4 class="advantages__description">
+        <span class="advantages__accent">Want to improve your well-being from the comfort of your own
+          couch? Are you having trouble finding the right therapist?
+        </span>
+        Here at ThriveTalk, our licensed therapists provide the same quality
+        care you would get in office from anywhere you can access your
+        laptop or mobile phone. Become your best self with ThriveTalk. Start
+        therapy now with a licensed therapist!
+      </h4>
     </div>
   </section>
   <!-- about -->
-  <section class="about hidden">
+  <section class="about">
     <h4 class="about__title">ABOUT US</h4>
     <p class="about__descriptions">
       We want to help you thrive! Whether you are just looking for someone to
@@ -91,10 +90,10 @@
       including relationships, sex, PTSD, depression, social anxiety, or even
       just caring for yourself more.
     </p>
-    <a class="about__link">CAN HELP YOU WITH</a>
+    <a class="about__link"># WECAN HELP YOU WITH</a>
   </section>
   <!-- activities -->
-  <section class="activities hidden">
+  <section class="activities">
     <div class="activities__item bg-pink">
       <div class="line"></div>
       <p class="activities__text">
