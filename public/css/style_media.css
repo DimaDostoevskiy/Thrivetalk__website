@@ -10,9 +10,6 @@
   .focus__item:last-child {
     width: 100%;
   }
-  .services__item {
-    height: 200px;
-  }
   .img-person_3 {
     width: 100%;
   }
@@ -27,7 +24,7 @@
   }
   .statistics__title {
     padding-left: 20px;
-    
+
     color: white;
   }
   .get_help_link {
@@ -36,10 +33,24 @@
 
     font-size: 20px;
 
-    color: white;
+    color: #22356f;
+  }
+  .img-person_4 {
+    width: 50%;
+  }
+  .assessment__title {
+    max-width: 45%;
+  }
+  .assessment__description {
+    max-width: 45%;
+  }
+  .img-person_5 {
+    display: none;
+  }
+  .contacts__content {
+    margin: 0 auto;
   }
 }
-
 /* 768 */
 @media (width > 780px) {
   .navbar {
