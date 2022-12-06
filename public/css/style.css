@@ -172,11 +172,15 @@ body {
 
 .header__menu {
   display: flex;
+  justify-content: center;
+  align-items: center;
   list-style: none;
 }
 
 .header__menu__link {
-  margin-right: 32px;
+  margin: 0 20px;
+
+  cursor: pointer;
 
   font-size: 14px;
   line-height: 95%;
@@ -185,7 +189,6 @@ body {
 
 .btn-contact {
   padding: 15px 20px;
-  background-color: #62d0df;
 
   font-weight: 700;
   font-size: 14px;
@@ -194,7 +197,10 @@ body {
   border-radius: 58px;
   border: none;
 
+  cursor: pointer;
+
   color: #ffffff;
+  background-color: #62d0df;
 }
 /* #endregion header */
 
@@ -582,10 +588,9 @@ body {
   width: 33.33333333333333%;
   min-width: 320px;
   max-width: 480px;
-
 }
 .services__title {
-  padding: 0 30px;
+  padding: 20px 30px;
 
   font-size: 24px;
   font-weight: 400;
@@ -760,7 +765,7 @@ body {
 .contacts__title {
   padding: 70px 0px 0px 0px;
   margin: 0px 0px 60px 0px;
-  
+
   font-size: 14px;
   font-weight: 700;
   line-height: 120%;
