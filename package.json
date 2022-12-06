@@ -1,12 +1,25 @@
 {
   "name": "thrivetalk",
-  "version": "0.0.0",
-  "private": true,
+  "version": "1.0.0",
+  "private": false,
   "scripts": {
     "start": "node ./index.js"
   },
   "dependencies": {
     "express": "~4.16.1",
     "morgan": "~1.9.1"
-  }
+  },
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DimaDostoevskiy/Thrivetalk__website.git"
+  },
+  "author": "DimaDostoevskiy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DimaDostoevskiy/Thrivetalk__website/issues"
+  },
+  "homepage": "https://github.com/DimaDostoevskiy/Thrivetalk__website#readme",
+  "description": ""
 }
